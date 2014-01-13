@@ -31,23 +31,25 @@ public class PrimeFactorsTest {
 		assertPrimeFactors(2 * 2 * 3 * 3 * 3 * 7 * 11 * 11 * 13, list(2, 2, 3, 3, 3, 7, 11, 11, 13));
 	}
 
+
 	private void assertPrimeFactors(int n, List<Integer> primeFactors) {
 		assertEquals(primeFactors, of(n));
 	}
-	private List<Integer> list(Integer... ints) {
-		return Arrays.asList(ints);
-	}
+
 
 	private List<Integer> of(int n) {
 		ArrayList<Integer> factors = new ArrayList<Integer>();
 
 		for (int divisor = 2; n > 1; divisor++)
-			for (;n % divisor == 0; n /= divisor)
+			for (; n % divisor == 0; n /= divisor)
 				factors.add(divisor);
 
 		return factors;
 	}
 
 
+	private List<Integer> list(Integer... ints) {
+		return Arrays.asList(ints);
+	}
 
 }
