@@ -51,5 +51,4 @@ public class PrimeFactorsTest {
 	private List<Integer> list(Integer... ints) {
 		return Arrays.asList(ints);
 	}
-
 }
