@@ -17,7 +17,11 @@ import static org.junit.Assert.assertEquals;
 public class PrimeFactorsTest {
 	@Test
 	public void canFactorIntoPrimes() {
-		assertEquals(Arrays.asList(), of(1));
+		assertEquals(list(), of(1));
+	}
+
+	private List<Integer> list() {
+		return Arrays.asList();
 	}
 
 	private List<Object> of(int i) {
