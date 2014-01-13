@@ -19,7 +19,7 @@ public class PrimeFactorsTest {
 
 	@Test
 	public void canFactorIntoPrimes() {
-		assertPrimeFactors(1, list());
+		assertPrimeFactors(1, list ());
 		assertPrimeFactors(2, list(2));
 	 	assertPrimeFactors(3, list(3));
 		assertPrimeFactors(4, list(2,2));
@@ -42,10 +42,8 @@ public class PrimeFactorsTest {
 
 		int divisor = 2;
 		while (n > 1) {
-			while (n % divisor == 0) {
+			for (;n % divisor == 0; n /= divisor)
 				factors.add(divisor);
-				n /= divisor;
-			}
 			divisor++;
 		}
 
