@@ -2,6 +2,11 @@ package primefactors;
 
 import org.junit.Test;
 
+import java.util.Arrays;
+import java.util.List;
+
+import static org.junit.Assert.assertEquals;
+
 /**
  * Created with IntelliJ IDEA.
  * User: hongseongmin
@@ -11,7 +16,14 @@ import org.junit.Test;
  */
 public class PrimeFactorsTest {
 	@Test
-	public void nothing() {
-
+	public void canFactorIntoPrimes() {
+		assertEquals(Arrays.asList(), of(1));
 	}
+
+	private List<Object> of(int i) {
+		return null;
+	}
+
+
+
 }
